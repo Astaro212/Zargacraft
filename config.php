@@ -112,8 +112,8 @@ $donate = [
 ];
 
 $server[] = array(
-    'server_name' => 'Anarchy',
-    'rcon_host' => '94.232.246.111',
-    'rcon_port' => '25575',
-    'rcon_password' => 'h3rcPpQ34%e1s'
+    'server_name' => '',
+    'rcon_host' => '',
+    'rcon_port' => '',
+    'rcon_password' => ''
 );

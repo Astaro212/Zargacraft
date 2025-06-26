@@ -11,10 +11,10 @@ class Shop
     public $amount = 0;
     public  $currency = 'RUB';
 
-    public int $merchantId = 62192;
-    public $donate_assoc;
+    public int $merchantId = 0;
+    public $donateAssoc;
 
-    private $secretWord1 = "cFFLnk5_M6Mv6pu";
+    private $secretWord1 = "";
     public function __construct($config)
     {
         $this->config = $config;
@@ -25,9 +25,9 @@ class Shop
         if (!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = [];
         }
-        $this->donate_assoc = [];
+        $this->donateAssoc = [];
         foreach ($this->config['donate'] as $item) {
-            $this->donate_assoc[$item['key']] = $item;
+            $this->donateAssoc[$item['key']] = $item;
         }
     }
 
